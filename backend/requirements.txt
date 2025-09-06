@@ -1,0 +1,10 @@
+Flask
+Flask-Cors
+PyPDF2
+scikit-learn
+numpy
+python-dotenv
+langchain-google-genai
+langchain-core
+uvicorn
+gunicorn
