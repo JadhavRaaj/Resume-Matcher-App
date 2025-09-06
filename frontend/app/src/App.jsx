@@ -36,7 +36,7 @@ const App = () => {
     setError(null);
     setLoading(true);
 
-    const apiUrl = 'http://localhost:5000/api/match';
+    const apiUrl = 'https://resume-matcher-api-qy31.onrender.com/api/match';
     const formData = new FormData();
     formData.append('jobDescription', jobDescription);
     formData.append('resume', resumeFile);
@@ -70,7 +70,7 @@ const App = () => {
     setError(null);
     setLlmLoading(true);
 
-    const apiUrl = 'http://localhost:5000/api/optimize';
+    const apiUrl = 'https://resume-matcher-api-qy31.onrender.com/api/optimize';
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',
