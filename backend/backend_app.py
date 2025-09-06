@@ -15,7 +15,7 @@ from langchain_core.prompts import PromptTemplate
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Ensure the Google API key is loaded
 api_key = os.getenv("GOOGLE_API_KEY")
